@@ -113,3 +113,7 @@ $app->router->group([
 });
 
 return $app;
+
+
+$app->register(App\Providers\ElasticClientServiceProvider::class);
+$app->register(App\Providers\LoggingElasticClientServiceProvider::class);
